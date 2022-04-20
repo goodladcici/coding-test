@@ -12,4 +12,10 @@
  and shorting mid(bin 6). The result seems quite good. Also, I divided each 
  strategy into equal weight portfolio allocation and value weight portfolio allocation.
  Furthermore, I found tickers are from tokyo market and I have heard that some 
- literatures suggested this momentum strategy does not work in Japen.*
+ literatures suggested this momentum strategy does not work in Japan.*
+![mean return of each bin](https://user-images.githubusercontent.com/99357310/164297863-f5a30420-f17e-4daf-9175-e621d75c5740.png)
+
+![](https://user-images.githubusercontent.com/99357310/164297893-2e240832-9257-4aca-9ba8-23d4608b27da.png)
+
+In this plot, cum1 is for bin10-bin1, cum2 is for bin10-bin6 and cum3 is for 0.5*bin10+0.5*bin1-bin6. mkt is for market portfolio made by all tickers in 
+data file
