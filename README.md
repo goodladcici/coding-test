@@ -16,7 +16,7 @@
  
 ![mean return of each bin](https://user-images.githubusercontent.com/99357310/164297863-f5a30420-f17e-4daf-9175-e621d75c5740.png)
 
-Mean return of each bin
+Bar chart above is mean return of each bin
 
 ![](https://user-images.githubusercontent.com/99357310/164297893-2e240832-9257-4aca-9ba8-23d4608b27da.png)
 
