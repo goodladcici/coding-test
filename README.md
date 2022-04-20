@@ -13,7 +13,7 @@
  volitility are worth to be test. Also, I divided each 
  strategy into equal weight portfolio allocation and value weight portfolio allocation.
  Furthermore, I found tickers are from tokyo market and I have heard that some 
- literatures suggested this momentum strategy does not work in Japan.*
+ literatures suggested this momentum strategy does not work well in Japan.*
  
 ![mean return of each bin](https://user-images.githubusercontent.com/99357310/164297863-f5a30420-f17e-4daf-9175-e621d75c5740.png)
 
