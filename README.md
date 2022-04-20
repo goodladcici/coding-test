@@ -9,7 +9,8 @@
  have momentum to keep their increasing, while low return stocks have
  potential bounce energy in short term future. So I modified the strategy to 
  longing high (bin 10),shorting mid (bin 6), or longing high+low (bin10+bin1)
- and shorting mid(bin 6). The result seems quite good. Also, I divided each 
+ and shorting mid(bin 6). The result seems quite good, so volitility plays a great role in this market and various strategies based on 
+ volitility are worth to be test. Also, I divided each 
  strategy into equal weight portfolio allocation and value weight portfolio allocation.
  Furthermore, I found tickers are from tokyo market and I have heard that some 
  literatures suggested this momentum strategy does not work in Japan.*
