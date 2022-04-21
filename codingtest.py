@@ -41,6 +41,9 @@ def rolling_prod(a, n=11) :
     ret[:n-1] = np.nan
     return pd.Series(ret,index=a.index)
 
+def sharpe(x):
+    return x.mean() / x.std()
+
 # read data and store market portfolio
 df = pd.read_csv('data.csv')
 mkt = df.copy()
@@ -136,9 +139,10 @@ strategy2['cum'] = (strategy2['strategy'] + 1).cumprod() - 1
 strategy2['cum1'] = (strategy2['strategy1'] + 1).cumprod() - 1
 strategy1['cum3_ew'] = (strategy1['strategy2'] + 1).cumprod() - 1
 strategy1['cum3_vw'] = (strategy1['strategy3'] + 1).cumprod() - 1
+strategy1['mkt'] = rmkt['mkt'].cumprod()-1
 strategy1['cum2_ew'] = strategy2['cum']
 strategy1['cum2_vw'] = strategy2['cum1'] 
-strategy1 = strategy1.merge(rmkt,on='month',how='left')
+#strategy1 = strategy1.merge(rmkt,on='month',how='left')
 
 # plot back testing
 strategy1\
@@ -149,9 +153,30 @@ strategy1\
     .assign(cum2_vw=strategy1['cum2_vw']+1)\
     .assign(cum3_ew=strategy1['cum3_ew']+1)\
     .assign(cum3_vw=strategy1['cum3_vw']+1)\
+    .assign(mkt=strategy1['mkt']+1)\
     .plot(x='month',\
           y=['cum1_ew','cum1_vw','cum2_ew','cum2_vw','cum3_ew','cum3_vw','mkt']\
               ,figsize = (7.5,6)).grid(axis='y')
+
+sr1e = sharpe(strategy1['strategy'])
+sr1v = sharpe(strategy1['strategy1'])
+sr2e = sharpe(strategy2['strategy'])
+sr2v = sharpe(strategy2['strategy1'])
+sr3e = sharpe(strategy1['strategy2'])
+sr3v = sharpe(strategy1['strategy3'])
+srmkt = sharpe(rmkt['mkt']-1)
+
+print(sr1e)
+print(sr1v)
+print(sr2e)
+print(sr2v)
+print(sr3e) 
+print(sr3v) 
+print(srmkt) 
+
+
+
+
 
 
 
