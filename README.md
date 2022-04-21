@@ -15,7 +15,7 @@
  <img width="205" alt="Screenshot 2022-04-21 at 14 49 10" src="https://user-images.githubusercontent.com/99357310/164391492-2ab5e7ab-20ea-45a3-9f9d-17b4d72002af.png">
 
  *Furthermore, I found tickers are from tokyo market and I have heard that some 
- literatures suggested this momentum strategy does not work well in Japan because there will be reversal effect, which implies low return will bounce back and high return will reverse to be low. Therefore, according to the bin chart below, the strategy with low min high (bin1-bin9) is worth and reasonable to be tested(i do not test here because time limit)*
+ literatures suggested this momentum strategy does not work well in Japan because there will be reversal effect, which implies low return will bounce back and high return will reverse to be low. Therefore, according to the bin chart below, the strategy with low min high (bin1-bin9 or bin1-bin8) is worth and reasonable to be tested(i do not test here because time limit)*
  
 ![mean return of each bin](https://user-images.githubusercontent.com/99357310/164297863-f5a30420-f17e-4daf-9175-e621d75c5740.png)
 
