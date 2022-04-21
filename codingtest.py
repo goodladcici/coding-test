@@ -166,13 +166,13 @@ sr3e = sharpe(strategy1['strategy2'])
 sr3v = sharpe(strategy1['strategy3'])
 srmkt = sharpe(rmkt['mkt']-1)
 
-print(sr1e)
-print(sr1v)
-print(sr2e)
-print(sr2v)
-print(sr3e) 
-print(sr3v) 
-print(srmkt) 
+print('cum1_ew:',sr1e)
+print('cum1_vw:',sr1v)
+print('cum2_ew:',sr2e)
+print('cum2_vw:',sr2v)
+print('cum3_ew:',sr3e) 
+print('cum3_vw:',sr3v) 
+print('mkt:',srmkt) 
 
 
 
